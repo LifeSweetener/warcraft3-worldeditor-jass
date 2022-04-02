@@ -20,4 +20,6 @@
 
 <p align="justify">В этом репозитории реализованы три триггера: с названием <b>"unit dies"</b>, <b>"resurrection"</b> и <b>"delete dead unit"</b>.</p>
 
-<p align="center"><br><br><img align="center" border="2" title="Игровой мир Warcraft" alt="Игровой мир Warcraft (скриншот)" src="img/WC3ScrnShot_040322_020554_01.png"></img><br><br></p>
+<p align="center"><br><br><img align="center" border="2" title="Внешний вид Редактора карт Warcraft 3 TFT" alt="Внешний вид Редактора карт Warcraft 3 TFT (скриншот)" src="img/Внешний вид Редактора карт Warcraft 3 TFT.jpg"></img><br><br></p>
+
+<p align="justify"> Триггер "unit dies" 
