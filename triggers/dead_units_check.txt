@@ -1,0 +1,30 @@
+﻿function dead_units_check_and_resurrection takes real x, real y returns boolean
+    local real MAX_DISTANCE = 400.0									// радиус действия кастомной (пользовательской, нестандартной) способности "Воскрешение"
+    local location dead_loc										// местонахождение (точка с двумя действительными координатами: x и y) - локация - погибшего воина в игре
+    local integer k = 0											// счётчик элементов массива "udg_DEAD_UNITS" и, заодно, массива "udg_DEAD_UNITS_PLAYERS"
+    local integer resurrection_number = 2      								// максимальное количество воскресаемых бойцов
+    local rect ability_rect = Rect(x-MAX_DISTANCE, y-MAX_DISTANCE, x+MAX_DISTANCE, y+MAX_DISTANCE)	// создание области поиска погибших воинов - прямоугольник с центром в точке, где находится "кастер" (волшебник или заклинатель)
+    
+    // ниже следует Jass-цикл, перебирающий глобальный массив погибших недавно воинов "udg_DEAD_UNITS" и проверяющий, нет ли в нём погибшего дружественного бойца, которого можно воскресить из мёртвых
+    loop
+        exitwhen k == udg_DEAD_UNITS_SIZE  												// условие выхода из цикла "exitwhen"
+        set dead_loc = GetUnitLoc(udg_DEAD_UNITS[k])											// определить локацию (т.е. местонахождение) очередного умершего воина (который умер где-то на карте)
+        if (RectContainsUnit(ability_rect, udg_DEAD_UNITS[k])) and (udg_DEAD_UNITS_PLAYERS[k] == udg_CASTER_PLAYER) then		// если погибший находится в радиусе действия воскрешающей способности (см. переменную MAX_DISTANCE) и он дружественный, то...
+            set resurrection_number = resurrection_number - 1										// отметить, что ещё один воин воскреснут
+            call RemoveUnit(udg_DEAD_UNITS[k])												// убрать погибшего воина с карты
+            call CreateUnitAtLoc(udg_CASTER_PLAYER, 'hfoo', dead_loc, 360)								// создать нового юнита (воина) на том же месте, где погиб прежний юнит (как будто он воскрес)
+            call AddSpecialEffectLoc("Abilities\\Spells\\Human\\Resurrect\\ResurrectCaster.mdl", dead_loc)				// добавить эффект при воскрешении (парящий над воскреснутым бойцом ангел)
+            call DisplayTimedTextFromPlayer(udg_CASTER_PLAYER, 10, 10, 5.00, "|cff8fff5fПадший боец найден!|r")				// вывести сообщение об успешном применении заклинания (способности)
+            if resurrection_number == 0 then
+                return true														// выйти из функции, если число воскреснутых бойцов достигло своего максимума
+            endif
+        endif
+        set k = k + 1															// инкрементировать счётчик
+    endloop
+
+    if resurrection_number < 2 then
+        return true
+    endif
+    
+    return false															// если вообще не получилось никого вернуть к жизни, то выернуть "false"
+endfunction
