@@ -23,3 +23,5 @@
 <p align="center"><br><br><img align="center" border="2" title="Внешний вид Редактора карт Warcraft 3 TFT" alt="Внешний вид Редактора карт Warcraft 3 TFT (скриншот)" src="img/Внешний вид Редактора карт Warcraft 3 TFT.jpg"></img><br><br><span align="center"><b>Скриншот 1 — Внешний вид Редактора карт Warcraft 3 TFT</b></span><br><br></p>
 
 <p align="justify"> Триггер "unit dies" имеет в качестве события строку <code>"Unit умирает"</code> (см. ). Это значит, что он будет ждать, пока кто-нибудь на карте не умрёт. После чего он сработает и перейдёт в следующий блок — где располагается список условий (как событий, так и условий может быть сразу несколько, а не только по одному на триггер).
+ 
+<p align="center"><br><br><img align="center" border="2" title="Внешний вид Редактора карт Warcraft 3 TFT" alt="Внешний вид Редактора карт Warcraft 3 TFT (скриншот)" src="img/Внешний вид Редактора карт Warcraft 3 TFT.jpg"></img><br><br><span align="center"><b>Скриншот 1 — Внешний вид Редактора карт Warcraft 3 TFT</b></span><br><br></p>
