@@ -24,4 +24,4 @@
 
 <p align="justify"> Триггер "unit dies" имеет в качестве события строку <code>"Unit умирает"</code> (см. <a href="#screen2">скриншот 2</a> ниже). Это значит, что он будет ждать, пока кто-нибудь на карте не умрёт. После чего он сработает и перейдёт в следующий блок — где располагается список условий (как событий, так и условий может быть сразу несколько, а не только по одному на триггер).
  
-<p align="center"><br><br><img name="screen2" id="sreen2" align="center" border="2" title="Содержимое триггера /"unit dies/"" alt="Содержимое триггера /"unit dies/" (скриншот)" src="triggers/unit dies/screenshot"></img><br><br><span align="center"><b>Скриншот 2 — Содержимое триггера "unit dies"</b></span><br><br></p>
+<p align="center"><br><br><img name="screen2" id="sreen2" align="center" border="2" title="Содержимое триггера /"unit dies/"" alt="Содержимое триггера /"unit dies/" (скриншот)" src="triggers/unit dies/screenshot.jpg"></img><br><br><span align="center"><b>Скриншот 2 — Содержимое триггера "unit dies"</b></span><br><br></p>
