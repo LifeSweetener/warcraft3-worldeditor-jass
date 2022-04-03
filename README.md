@@ -64,5 +64,6 @@
  <li>JASS Manual // JASS Tools URL: http://jass.sourceforge.net/doc/ (дата обращения: 03.04.2022).</li>
  <li>JASS: Курс молодого бойца // xgm.guru URL: https://xgm.guru/p/wc3/jass-crash-course (дата обращения: 03.04.2022).</li>
  <li>Осваиваем jass (0-1) // xgm.guru URL: https://xgm.guru/p/wc3/jassintroduction (дата обращения: 03.04.2022).</li>
+ <li>Урок №2 по редактору Warcraft (WorldEdit): Способности на триггерах и Jass // youtube.com URL: https://www.youtube.com/watch?v=csH1aNr2TjI (дата обращения: 03.04.2022).</li>
  </ol>
 </p>
