@@ -51,7 +51,7 @@
 </p>
  <p align="center"><br><br><code>set flag = dead_units_check_and_resurrection(caster_x, caster_y)</code><br><br></p>
 
-<p align="center"><br><br><table align="center"><tr><td align="center"><img name="screen4" id="screen4" align="center" border="2" title="Содержимое триггера /"resurrection/"" alt="Содержимое триггера /"resurrection/" (скриншот)" src="triggers/resurrection/screenshot.jpg"></img><br><br><span align="center"><b>Скриншот 4 — Содержимое, можно сказать, центрального триггера всего проекта "resurrection"</b></span></td></tr></table><br><br></p>
+<p align="center"><br><br><table align="center"><tr><td align="center"><img name="screen4" id="screen4" align="center" border="2" title="Содержимое триггера /"resurrection/"" alt="Содержимое триггера /"resurrection/" (скриншот)" src="triggers/resurrection/screenshot.jpg"></img><br><br><span align="center"><b>Скриншот 4 — Содержимое, можно сказать, центрального триггера всего проекта — "resurrection"</b></span></td></tr></table><br><br></p>
 
 <p align="justify">Код функции <code>dead_units_check_and_resurrection()</code> лежит в репозитории по пути <b>triggers/dead_units_check.txt</b> с подробными комментариями почти к каждой строке.</p>
 
