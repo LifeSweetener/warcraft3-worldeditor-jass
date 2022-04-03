@@ -8,6 +8,7 @@
  <li><a href="#head1">О чём здесь речь?</a></li>
  <li><a href="#head2">Что тут лежит?</a></li>
  <li><a href="#head3">Список использованной литературы</a></li>
+ <li><a href="#head4">Благодарность прочитавшему!)</a></li>
 </ul>
 </p>
 
@@ -67,3 +68,6 @@
  <li>Урок №2 по редактору Warcraft (WorldEdit): Способности на триггерах и Jass // youtube.com URL: https://www.youtube.com/watch?v=csH1aNr2TjI (дата обращения: 03.04.2022).</li>
  </ol>
 </p>
+
+
+<h2 name="head4" id="head4">Спасибо тебе за внимание, дорогой читатель! Хорошего настроения)</h2>
